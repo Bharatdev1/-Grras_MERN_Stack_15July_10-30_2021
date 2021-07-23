@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:cursive;
+            
+        }
+        body {
+            background: violet;
+        }
+
+        .block {
+            height: 170px;
+            width: 300px;
+            background-image: url('images/sian-cooper-CAOZbgPa-7o-unsplash.jpg');
+            background-size: 300px 200px;
+            border-radius: 30px 30px 0 0;
+            margin-left: 450px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            z-index: 1
+        }
+
+        .secondblock {
+            height: 400px;
+            width: 300px;
+            background: white;
+            margin-left: 450px;
+            border-radius: 0 0 30px 30px;
+            position: relative;
+            bottom: 130px;
+            z-index: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow:cornflowerblue
+        }
+
+        .top {
+            position: relative;
+            top: -75px;
+            left: 550px;
+            bottom: 100px;
+            z-index: 2;
+            border-radius: 100px;
+
+        }
+
+        img {
+            height: 100px;
+            width: 100px
+        }
+
+        .left {
+            padding-left: 20px;
+            float: left;
+            text-align: center;
+        }
+
+        .right {
+            float: right;
+            text-align: center;
+            padding-right: 20px;
+        }
+        .left2{
+            float: left;
+            position: relative;
+            left:-30px
+
+        }
+        .right2{
+            float:right ;
+            position: relative;
+            right:-50px
+        }
+        
+
+        button {
+            border-radius: 50px;
+            height: 40px;
+            width: 250px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-right: 5px;
+            margin-left: 2px;
+            text-align: center;
+            box-sizing: border-box;
+            background: darkorange;
+            border-color: darkorange;
+        }
+        h2,p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div clas="parent">
+        <div class="block"></div>
+        <img class="top" src="images/download.png">
+        <div class="secondblock">
+            <h2>Morgan Sweeney</h2>
+            <p style="color: darkslategrey;">Ant collector</p>
+            
+            <p style="color:darkturquoise; font-size: 20px;"  class="left">12</p>
+            <p style="color:darkturquoise; font-size: 20px;" class="right">1000</p>
+            
+            <br>
+            <p style="color: darkslategrey;" class="left2">followers</p>
+            <p style="color: darkslategrey;" class="right2">following</p>
+            
+            <button>FOLLOW</button>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptates! Quo eum excepturi labore,
+               </p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
