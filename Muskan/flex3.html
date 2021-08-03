@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<d>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+            
+
+        }
+        body{
+            margin: 80px;
+            background-color:#dfe3ee;
+        }
+
+        .side{
+            height: 240px;
+            width:300px;
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border-color: #dfe3ee;
+            border-width: 1px;
+        }
+        .login{
+            width:250px;
+            height: 30px;
+            background-color: #1778F2;
+            box-sizing: border-box;
+            border-color:#1778F2;
+        }
+        h1{
+            color:#1778F2;
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        hr { color: gray; border-style: inset; border-width: 1px; margin: 0.5em auto; }
+        button{
+            border-radius: 5px;
+            color: white;
+        }
+        p{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>facebook</h1>
+        <p style="font-size: 20px;">facebook helps you connect and share<br> with the people in your life.</p></div>
+        <div  >
+            <div class="side"><input type="text" placeholder="Email address of phone number">
+            <input type="text" placeholder="password"><br>
+            <button class="login"><b>Log In</b></button>
+            <a style="margin-top:10px;" href="#">forget password</a>
+            <hr style="color: black;"><hr>
+            <button style="background-color:#008000;color: white; height: 30px; border: 0px; padding:2px; width: 150px;">Create New Account</button></div>
+            <p style="margin:10px;"><b>Create a page</b> for a celebrity,brand or buisness.</p>
+        </div>
+
+    </div>
+</body>
+</html>
