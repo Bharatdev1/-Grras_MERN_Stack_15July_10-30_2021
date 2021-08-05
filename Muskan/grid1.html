@@ -9,11 +9,9 @@
     <title>Document</title>
     <style>
         *{
-            font-size: 15px;
             margin: 0px;
             padding:0px;
             box-sizing: border-box;
-            
         }
         .wrapper{
            
@@ -21,11 +19,10 @@
             display: grid;
             width: 80%;
             height: 600px;
-            
             margin: 0 auto;
-            display: grid;
+        
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows:300px 300px;
+            grid-template-rows:1fr 1fr;
             grid-template-areas: 'o t th'
                                  'fo fi fi';
                                  
@@ -48,6 +45,7 @@
         }
         .five{
             grid-area: fi;
+            overflow: hidden;
         }
         .one i{
             background-color: darkmagenta;
@@ -92,17 +90,18 @@
         }
         .nav{
             height: 50px;
-            width:98vw;
+            width:100vw;
             border-top: 2px solid grey;
             border-bottom:2px solid grey ;
+            background-color: brown;
 
         }
         .nav li a {
         display: block;
-        
         text-align: center;
         padding: 14px 16px;
-        text-decoration: none;}
+        text-decoration: none;
+    }
         ul {
         list-style-type: none;
         margin: 0;
@@ -116,19 +115,18 @@
 </head>
 <body>
     <div class="nav">
-        <ul>
+        <!-- <ul>
             <li style="float:left"><a href="#">splash</a></li>
             <li><a href="#"><button style="border-radius: 30px;background-color: blue;color: white;">request a quote</button></a></li>
             <li><a href="#">intro</a></li>
             <li><a href="#">blog</a></li>
             <li><a href="#">home</a></li>
             <li><a href="#">pages</a></li>
-            <li><a href="#">components</a></li>
-            
-        </ul>
+            <li><a href="#">components</a></li>            
+        </ul> -->
 
     </div>
-    <h1 style="font-size: 30px; text-align: center;justify-content: center;">What we Offer</h1>
+    <h1 style=" text-align: center;background-color: brown;">What we Offer</h1>
     <div class="wrapper">
         <div class="one">
             <i class="fa fa-address-card big" aria-hidden="true"></i>
