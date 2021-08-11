@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .parent{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(0, 0, 0,.7);
+            transform: rotateY(50deg);
+            perspective: 1000px;
+
+        }
+        .parent div{
+            position: absolute;
+            border-radius: 50%;
+            animation-name: myanim;
+            animation-duration:2.2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .zero{
+            width: 5px;
+            height: 5px;
+            border: 2px solid yellow;
+            top:307px;
+            left: 407px;
+            /* animation-delay: 0s; */
+        }
+        .one{
+            width: 20px;
+            height: 20px;
+            border: 2px solid yellow;
+            top:300px;
+            left: 400px;
+            animation-delay: .1s;
+        }
+        .two{
+            width: 40px;
+            height: 40px;
+            border: 2px solid yellow;
+            top:290px;
+            left: 390px;
+            animation-delay: .2s;
+        }
+        .three{
+            width: 60px;
+            height: 60px;
+            border: 2px solid yellow;
+            top:280px;
+            left: 380px;
+            animation-delay: .3s;
+        }
+        .four{
+            width: 80px;
+            height: 80px;
+            border: 2px solid yellow;
+            top:270px;
+            left: 370px;
+            animation-delay: .4s;
+        }
+        .five{
+            width: 100px;
+            height: 100px;
+            border: 2px solid yellow;
+            top:260px;
+            left: 360px;
+            animation-delay: .5s;
+        }
+        .six{
+            width: 120px;
+            height: 120px;
+            border: 2px solid yellow;
+            top:250px;
+            left: 350px;
+            animation-delay: .6s;
+        }
+        .seven{
+            width: 140px;
+            height: 140px;
+            border: 2px solid yellow;
+            top:240px;
+            left: 340px;
+            animation-delay: .7s;
+        }
+        .eight{
+            width: 160px;
+            height: 160px;
+            border: 2px solid yellow;
+            top:230px;
+            left: 330px;
+            animation-delay: .8s;
+        }
+        .nine{
+            width: 180px;
+            height: 180px;
+            border: 2px solid yellow;
+            top:220px;
+            left: 320px;
+            animation-delay: .9s;
+        }
+        .ten{
+            width: 200px;
+            height: 200px;
+            border: 2px solid yellow;
+            top:210px;
+            left: 310px;
+            animation-delay: 1s;
+        }
+        .eleven{
+            
+            width: 220px;
+            height: 220px;
+            border: 2px solid yellow;
+            top:200px;
+            left: 300px;
+            animation-delay: 1.1s;
+        }
+        @keyframes myanim {
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                
+                transform: translateX(150px);
+            }
+            100%{
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="zero"></div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+        <div class="eleven"></div>
+    </div>
+</body>
+</html>

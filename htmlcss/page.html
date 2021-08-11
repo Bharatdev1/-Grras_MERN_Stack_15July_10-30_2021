@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body{ */
+        /* background-color: white; */
+        /* position: relative; */
+
+        /* } */
+
+
+        .page {
+            width: 100%;
+            height: 110px;
+            background-color: rgb(30, 100, 212);
+            /* margin: 0px auto; */
+            /* margin-top: 5px; */
+        }
+
+        /* .page img{
+            width: 2%;
+           
+        } */
+
+        .page ul {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .head{
+            color: white;
+        }
+
+        .page ul li {
+            display: flex;
+            font-size: 15px;
+
+        }
+
+        .dom {
+            margin-right: 45%;
+            font-size: 55px;
+        }
+
+        .menu {
+            background-color: whitesmoke;
+            position: sticky;
+        }
+
+        .menu li {
+            color: gray;
+        }
+
+        .br {
+            margin-top: 1px;
+            margin-right: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .img {
+            width: 90%;
+            /* background-color: yellow; */
+            /* height: 80%; */
+            position: relative;
+            /* display: flex; */
+        }
+
+        .img .vacc {
+            width: 25%;
+            height: 100px;
+            margin-top: 60px;
+            float: left;
+            position: fixed;
+        }
+
+        .img .bag {
+            width: 10%;
+            /* float: right; */
+            margin-top: 60px;
+            position: fixed;
+            top: 70px;;
+            right:0;
+
+        }
+
+        .content {
+            width: 90%;
+            margin: 60px auto;
+            /* background-color: brown; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 23%;
+            height: 350px;
+            background-color: whitesmoke;
+            /* justify-content: space-between; */
+            border: 1px solid black;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 40%;
+        }
+
+        .type {
+            margin: 2px;
+            font-family: sans-serif;
+            padding: 2px;
+        }
+
+        .summ {
+            margin: 2px;
+            padding: 2px;
+            color: gray;
+            font-size: 16px;
+        }
+
+        .one {
+            float: left;
+        }
+
+        .two {
+            float: right;
+        }
+
+        .size {
+            margin: 2px;
+            padding: 2px;
+            font-size: 18px;
+        }
+
+        .choose {
+            margin: 2px;
+            padding: 2px;
+            color: gray;
+            font-size: 16px;
+        }
+
+        .three {
+            float: left;
+        }
+
+        .four {
+            float: right;
+        }
+        .btn{
+            margin-top: 25px;
+        
+        }
+
+        .btn button{
+            color: rgb(19, 100, 19);
+            border: 1px solid green;
+            background-color: white;
+            /* width: 20px; */
+            height: 35px;
+            float: right;
+            padding: 10px;
+            margin-top: 20px;
+            margin-right: 5px;
+        }
+        .lc{
+            margin-right: 5px;
+            margin-top: 1px;
+        }
+        .user{
+            margin-right: 5px;
+            margin-top: 1px;
+            font-size: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="page">
+        <!-- <img src="logo.png" alt=""> -->
+        <div class="header">
+            <div class="left">
+                <ul>
+                    <li>Domino's Pizza</li>
+                </ul>
+            </div>
+            <div class="right">
+              <ul>
+              <li>Delivery</li>
+              <li>Dine in/Takeaway</li>
+              <li>Location</li>
+              <li>My Account</li>
+            </ul>
+            </div>
+        </div>
+        <!-- <div class="secondNav"></div> -->
+        <ul class="menu">
+            <li>Everyday Value</li>
+            <li>Bestsellers</li>
+            <li>Veg Pizza</li>
+            <li>Pasta Pizza Party</li> 
+            <li>Meal & Combos</li>
+            <li>Pizza Mania</li>
+            <li>Sides</li>
+            <li>Beverages</li>
+            <li>Dessert</li>
+        </ul>
+    </div>
+    <div class="img">
+        <img class="vacc" src="banner_menu.png" alt="">
+        <img class="bag" src="dominos.png" alt="">
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="marge.jpg" alt="">
+            <div class="info">
+                <h3 class="type">Margherita</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="tandoori-paneer.f2b53eed52aaeedf5f698407729c9baa.1.jpg" alt="">
+            <div class="info">
+                <h3 class="type">Margherita</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="frmhous.jpg" alt="">
+            <div class="info">
+                <h3 class="type">Farmhouse</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img class="a" src="marge.jpg" alt="">
+            <i class='fa fa-heart'></i>
+            <div class="info">
+                <h3 class="type">Margherita</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="download.jpg" alt="">
+            <div class="info">
+                <h3 class="type">Peppy Paneer</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="marge.jpg" alt="">
+            <div class="info">
+                <h3 class="type">Margherita</h3>
+                <h4 class="summ">Classic delight with 100% real mozzarella cheese</h4>
+            </div>
+            <div class="size">
+                <h4 class="one"> Size <i class="fa fa-angle-down"></i></h4>
+                <h4 class="two">Crust <i class="fa fa-angle-down"></i></h4>
+                <br>
+            </div>
+            <div class="choose">
+                <h5 class="three">Medium</h5>
+                <h5 class="four">New Hand Tossed</h5>
+            </div>
+            <div class="btn">
+                <button>Add To Cart</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
