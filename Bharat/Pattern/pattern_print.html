@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns</title>
+
+    <script>
+        /*This is some test run*/
+        // alert(1%2)
+        // alert(2%2)
+        // alert(3%2)
+        /*
+        ------------Pattern 1-----------
+        */    
+        var i, j;
+        for(i=1; i<=5; i++)
+        {
+        for(j=i; j>=1; j--)
+        document.write(j % 2);
+        document.write("<br>");
+        }
+
+        /*
+        ------------Pattern 2-----------
+        */
+        var k, l;
+        for(k=1; k<=5; k++)
+        {
+        for(l=1; l<=k; l++)
+        document.write(l % 2);
+        document.write("<br>");
+        }
+         /*
+        ------------Pattern 3-----------
+        */
+        let pattern = ()=>{
+            userinput=document.getElementById("Userinput").value
+            how_many_times=document.getElementById("number_of_loop").value
+            // alert(userinput)
+            var k, l;
+            for(i=userinput; i<=how_many_times; i++)
+            {
+            for(j=i; j>=1; j--)
+            document.write(j % 2);
+            document.write("<br>");
+            }
+
+        }
+    </script>
+</head>
+<body>
+<h2>Choose your custom pattern</h2>
+    <!-- Form code starts from here -->
+    <form onsubmit="pattern()">
+        <input type="number" id="Userinput" placeholder="Enter number only">
+        <h5> enter the value  </h5>
+        <input type="number" id="number_of_loop" placeholder="Enter number only">
+        <h5> Enter how maney times you want you want to run</h5>
+        <button>print pattern</button>
+    </form>
+</body>
+</html>
