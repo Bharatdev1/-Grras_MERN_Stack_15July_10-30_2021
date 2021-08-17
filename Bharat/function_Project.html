@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+
+<script>
+    /*
+    ---------------------------------------------
+    This function is to calculate the intrest 
+    ---------------------------------------------
+    */
+ let amount_calculate=(amount)=>{
+        if (amount <= 200){
+            let intrest=userinput*4/100
+            calculate= Number(userinput) + intrest
+            recipt=`
+            Amount = ${amount}<br/>
+            Intrest = 4% <br>
+            Total Before tax = ${calculate} 
+            `
+            document.getElementById('Description').innerHTML= recipt
+            tax_calculate(calculate)
+        }
+        else if (amount >= 201 && amount <400){
+           let intrest=userinput*5/100
+            calculate= Number(userinput) + intrest
+            recipt=`
+            Amount = ${amount}<br/>
+            Intrest = 5% is ${intrest}<br> 
+            Total Before tax = ${calculate} 
+            `
+            document.getElementById('Description').innerHTML= recipt
+            tax_calculate(calculate)
+        }
+        else if (amount >= 400){
+            let intrest=userinput*6/100
+            calculate= Number(userinput) + intrest
+            recipt=`
+            Amount = ${amount}<br/>
+            Intrest = 6% <br>
+            Total Before tax = ${calculate} 
+            `
+            document.getElementById('Description').innerHTML= recipt
+            tax_calculate(calculate)
+        }
+    }
+    /*
+    function is used to calculate the tax 
+    */
+        let tax_calculate=(final_amount)=>{
+            var tax= final_amount*10/100
+            taxed_amount=Number(final_amount) + tax
+            document.getElementById('Amount').innerHTML= `
+            Final Amount after 10% tax (${tax})<br/>
+            Total = ${taxed_amount}`
+        }
+    /*
+    ---------------------------------------------
+    Main user intraction function
+    ---------------------------------------------
+    */
+    let clerk= ()=>{
+        userinput=document.getElementById("Userinput").value
+        // alert(userinput)
+        if (userinput){
+            // alert("some value is inside")
+            amount_calculate(userinput)
+
+        }
+        else{
+            alert("Please insert some number")
+        }
+    }
+</script>
+
+</head>
+<body>
+    <form>
+        <input required type="number" id="Userinput" placeholder="Enter number only">
+        <button  type="button" onclick="clerk()">Calculate</button>
+        <h2>Description</h2>
+        <h3 id="Description"></h3>
+        <h2>Total amount to be paid</h2>
+        <h3 id="Amount"></h3>
+
+    </form>
+</body>
+</html>
