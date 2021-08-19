@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(){
+            var a= Number(prompt("Enter data one"));
+            var b= Number(prompt("Enter data two"));
+            var choice= Number(prompt("Enter choice"));
+            
+            switch(choice){
+                case 1:
+                  var p = sum(a,b);
+                  alert(p);
+                    break;
+                case 2:
+                  var q=  sub(a,b);
+                  alert(q);
+                    break;
+                case 3:
+                  var r=   mult(a,b);
+                  alert(r);
+                    break;
+                case 4:
+                   var m=  div(a,b);
+                //    alert(m);
+                    break;    
+
+                    
+            }
+        }
+        function sum(a,b){
+            var c= a+b;
+            return c;
+        }
+        function sub(a,b){
+            var d =a-b;
+            return d;
+        }
+        function div(a,b){
+            var e = a/b;
+            alert(e);
+        }
+        function mult(a,b){
+            var f=a*b;
+            return f;
+        }
+        calc();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

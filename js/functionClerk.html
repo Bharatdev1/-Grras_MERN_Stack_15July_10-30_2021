@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clerk()
+        {
+                var unit = Number(prompt("enter number of units"));
+                var am=amountCalc(unit);
+                var t=taxCalc(am);
+                alert(am+t);
+        }
+        function amountCalc(u)
+        {
+            if(u<200)
+            {
+                return u*4;
+            }
+            else if(u<400) {
+                return u*5
+            }
+            else{
+                return u*6;
+            }
+
+        }
+        function taxCalc(c)
+        {
+            return c*.1;
+        }
+        clerk();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

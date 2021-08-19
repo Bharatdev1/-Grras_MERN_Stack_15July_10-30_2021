@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function clerk(u) {
+        //     var a = u;
+        //     return a;
+
+            function amt(a) {
+                if (a <= 200) {
+                    amount = 4 * a;
+                }
+                else if (a <= 400) {
+                    amount = 5 * a;
+                }
+                else {
+                    amount = 6 * a;
+                }
+               var tax=(10*amount)/100;
+               var total=amount+tax;
+
+                alert(total);
+            //  return amount;
+            }
+            // function tax(t) {
+            //     tax = (10 * amount) / 100;
+            //     return tax;
+            // }
+            // u=amount+tax;
+            // alert(u);
+        // }
+        var s = Number(prompt("enter units"));
+        amt(s);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
