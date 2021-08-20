@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validation(){
+            var isValid=true;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var email=document.getElementById("email").value;
+            if (!email.match(mailformat)){
+                isValid=false;
+                alert("wrong name format");
+                // document.getElementById("wrongemail").innerHTML = "wrong email format";
+                
+            }
+            var Name=document.getElementsById("name").value;
+            var nameformat=/^[a-z A-z]+$/;
+
+            if(!Name.match(nameformat)){
+                isValid=false;
+                alert("wrong name format");
+                // document.getElementById("wrongname").innerHTML = "wrong name format";
+                
+            }
+            var pass=document.getElementById("password").value;
+            if(pass.length<5 && pass.length>8){
+                isValid=false;
+                alert("wrong name format");
+                
+                
+
+            }
+            return isValid;
+
+        }
+    </script>
+</head>
+<body>
+    <form action="EventHandling.html" onsubmit="return validation()">
+        <label>Name</label><input type="text" id="name">
+        <p id="wrongname" style="color: red;"></p><br>
+        <label>Email</label><input type="text" id="email">
+        <p id="wrongemail" style="color: red;"></p><br>
+        <label>Password</label><input type="password"><br>
+        <label></label>
+        <button>submit</button>
+
+    </form>
+</body>
+</html>

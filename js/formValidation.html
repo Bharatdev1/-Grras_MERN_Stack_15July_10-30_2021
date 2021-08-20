@@ -17,13 +17,30 @@
             }
             return isValid;
         }
+        function fun2(){
+            var isValid=true;
+            var pass=document.getElementById("password").value;
+            if(pass.length>=5 && pass.length<=8){
+                isValid=true;
+                
+                
+
+            }
+            else{
+
+                isValid=false;
+                alert("password invalid");
+            }
+            
+            return isValid;
+        }
     </script>
 </head>
 <body>
-    <form action="EventHandling.html" onsubmit="return fun()">
-        User Name: <input type="text" name="user_name" id= "user_name">
+    <form action="EventHandling.html" onsubmit="return fun2() & fun()" >
+        User Name: <input type="text" name="user_name" id= "user_name" onsubmit="return fun()">
         User Email: <input type="email" name="user_email" id= "user_email">
-        User Password: <input type="password"  name="password" id= "password">
+        User Password: <input type="password"  name="password" id= "password" >
         Age <input type="text" name="age" id="age">
         <button>submit</button>
     </form>
