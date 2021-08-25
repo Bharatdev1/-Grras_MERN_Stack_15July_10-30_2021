@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var username = document.getElementById(username)
+        var email = document.getElementById(email)
+        var password = document.getElementById(password)
+        var mobile = document.getElementById(mobile)
+
+    </script>
+    <style>
+        .container {
+            padding: 40px;
+        }
+        .form-control{
+            margin: 50px;
+
+        }
+        .form-control input{
+            display: block;
+        }
+        i{
+            color: red;
+           
+        }
+        small{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form" action="">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" id="username">
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" id="email">
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password">
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label>Mobile</label>
+                <input type="number" id="mobile">
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+           
+           
+        </form>
+    </div>
+</body>
+</html>

@@ -13,10 +13,18 @@
             if(user_name=="")
             {
                 isValid=false;
-                alert("user name is a reuired field")
+                alert("user name is a required field")
             }
+            var password= document.getElementById("password").value;
+            if(password.length<5 || password.length>8){
+                isValid=false;
+                alert("the password does not match the given requirements" )
+             }
+          
+
             return isValid;
         }
+      
     </script>
 </head>
 <body>

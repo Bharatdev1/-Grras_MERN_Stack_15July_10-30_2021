@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    
+    <button id="btn">click</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum nulla laudantium fuga, blanditiis, similique quibusdam neque numquam, error corporis optio vel voluptate perspiciatis sunt ducimus quaerat nostrum officiis repudiandae velit doloremque assumenda ipsam impedit saepe. Soluta ullam consectetur a, cumque, libero enim sit sunt natus dolores sequi commodi! Laboriosam?</p>
+
+<script>
+    $('#btn').click(function(){
+        $("p").effect( "bounce", {}, 500, function(){alert("kjhkjh")} );
+    })
+</script>
+
+
+
+</body>
+</html>
