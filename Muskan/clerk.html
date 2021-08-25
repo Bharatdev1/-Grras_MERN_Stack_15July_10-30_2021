@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        let unit=Number(prompt('enter unit'));
+        function clerk(unit){
+            
+            let amt=amtcalc(unit);
+            let tax=taxcalc(amt);
+            let total=amt+tax;
+            alert(total);
+
+        }
+        function amtcalc(ut){
+            if (ut<=200){
+                return 4*ut}
+            else if (ut<=400){
+                return 5*ut
+            }
+            else if (ut>400){
+                return 6*ut
+            }
+            // return amt
+        }
+        function taxcalc(amt){
+            let tax=0.1*amt
+            return tax
+        }
+        
+        clerk(unit )
+        // document.write(totalamt)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
