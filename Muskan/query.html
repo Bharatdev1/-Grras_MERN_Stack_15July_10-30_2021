@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>student details who are from jaipur</h2>
+    <p id="demo"></p>
+    <p id="number"></p>
+    <h2>student details who are in 3 year and doing web development</h2>
+    <p id="demo2"></p>
+    <p id="number2"></p>
+</body>
+<script>
+    var data=[
+        {
+            name:'abc',
+            course:'web development',
+            city:'jaipur',
+            year:'3'
+        },
+        {
+            name:'rrr',
+            course:'data science',
+            city:'pune',
+            year:'2'
+        },
+        {
+            name:'pqr',
+            course:'django',
+            city:'mumbai',
+            year:'1'
+        },
+        {
+            name:'zzz',
+            course:'web development',
+            city:'jaipur',
+            year:'3'
+        },
+        {
+            name:'opc',
+            course:'data science',
+            city:'jaipur',
+            year:'3'
+        },
+        {
+            name:'jjj',
+            course:'data science',
+            city:'jaipur',
+            year:'3'
+        }
+]
+//how many students are from jaipur
+var cityname=data.filter(function(s){ return s.city=='jaipur'});
+let txt="";        
+cityname.forEach(myfunction);
+
+
+document.getElementById("demo").innerHTML = txt;
+
+
+
+
+function myfunction(value) {
+  txt += value.name +("&nbsp")+ value.course+("&nbsp")+ value.year+ "<br>"; 
+}
+
+
+
+
+document.getElementById("number").innerHTML=cityname.length+("&nbsp")+"students are from jaipur";
+//how many are in third year and having course web development
+var stu=data.filter(function(s){return s.course=='web development' && s.year==3});
+let txt2="";
+var stuname=stu.forEach(func);
+document.getElementById("demo2").innerHTML=txt2;
+function func(v){
+    txt2+=v.name+("&nbsp")+v.city+'<br>';
+
+}
+document.getElementById("number2").innerHTML=stu.length+("&nbsp")+"students are in 3rd year and doing web development";
+
+</script>
+</html>
