@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            width: 80%;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .form input,.form button {
+            margin-left:50px;
+        }
+        table{
+            width: 35%;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="text" id="pid">
+        <input type="text" id="pname">
+        <input type="text" id="pqty">
+        <button onclick="add()">add</button>
+    </div>
+
+    <table id="products" onclick="changeQty()" >
+        <tr>
+            <td>product id</td>
+            <td>product name</td>
+            <td>product qty</td>
+            <td>Actions</td>
+           </tr>
+    </table>
+    <script>
+        var pids =[]
+        function add(){
+
+            var p_id = document.getElementById("pid").value
+            var p_name = document.getElementById("pname").value
+            var p_qty = document.getElementById("pqty").value
+            
+            var isAvailable=false;
+            isAvailable = pids.some(function(id){return id == p_id})
+
+
+            if(isAvailable)
+            {
+                    alert("product id must be unique")
+            }
+            else{
+
+                
+                pids.push(p_id);
+                var tr = `<tbody id="pr_${p_id}">
+                    <tr >
+                        <td >${p_id}</td>
+                        <td oninput="send(${p_id}, 'name')" contenteditable="true">${p_name}</td>
+                        <td contenteditable="true" id="qty_${p_id}" >${p_qty}</td>
+                        <td> <button data-action="add" data-pid="${p_id}" >+</button><button data-action="sub" data-pid="${p_id}">-</button></td>
+                        <td> <button onclick="deleteProduct(${p_id})"  >delete</button></td>
+                        <td> <button onclick="deleteProduct(${p_id})"  >Edit</button></td>
+                        </tr>
+                        </tbody>`
+                        document.getElementById('products').innerHTML+=tr;
+                    }
+                }
+                function send(pid, col)
+                {
+                    // alert("asdfas");
+                    alert(pid);
+                    alert(col);
+                    alert(event.target.innerText);
+                }
+                    
+        function changeQty()
+        {
+            var btn = event.target;
+            var p_id=  btn.dataset.pid;
+            var action=  btn.dataset.action;
+            
+
+            var qt= Number(document.getElementById("qty_"+p_id).innerText)
+            if(action=="add")
+            {
+                document.getElementById("qty_"+p_id).innerText=qt+1;
+                
+            }
+            else{
+                
+                if(qt==1)
+                {
+                    var t=document.getElementById("pr_"+p_id);
+                    console.log(t);
+                    document.getElementById("products").removeChild(t);
+                }
+                else{
+
+                    document.getElementById("qty_"+p_id).innerText=qt-1;
+                }
+            }
+        }
+        function deleteProduct(p)
+        {
+            var t=document.getElementById("pr_"+p);
+                    console.log(t);
+                    document.getElementById("products").removeChild(t);
+        }
+
+
+    </script>
+</body>
+</html>
